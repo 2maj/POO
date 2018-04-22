@@ -1,0 +1,9 @@
+package ClasseFille;
+
+public class Veau {
+
+	public Veau() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

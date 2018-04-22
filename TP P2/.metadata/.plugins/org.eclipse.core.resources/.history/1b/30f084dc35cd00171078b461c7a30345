@@ -1,0 +1,9 @@
+package ClasseFille;
+
+public class Veau {
+
+	public Veau() {
+		
+	}
+
+}

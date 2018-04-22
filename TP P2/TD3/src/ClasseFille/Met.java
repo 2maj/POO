@@ -1,0 +1,33 @@
+package ClasseFille;
+public abstract class Met {
+	private String nom;
+	private int calorie;
+	public Met(String n, int c){
+		nom=n;
+		calorie=c;
+	}
+	abstract boolean estSucre();
+	abstract boolean estSale();
+	public boolean estSucreSale(){
+		return (!estSucre() && !estSale());
+	}
+	public boolean estDietetique() {
+		return (calorie<200);
+	}
+	public int getCalorie() {
+		return calorie;
+	}
+	@Override
+	public String toString() {
+		String text;
+		if(estSucre()) {
+			text="Sucré";
+		}else if(estSale()) {
+			text="Salé";
+		}else {
+			text="Sucré et salé";
+		}
+		return "Met [nom=" + nom + ", calorie=" + calorie +" "+text+ "]";
+	}
+	
+}

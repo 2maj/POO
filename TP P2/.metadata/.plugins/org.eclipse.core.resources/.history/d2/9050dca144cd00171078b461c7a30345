@@ -1,0 +1,11 @@
+package Exercice1;
+
+import java.util.Observable;
+
+public class Poste extends Observable {
+
+	public Poste() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

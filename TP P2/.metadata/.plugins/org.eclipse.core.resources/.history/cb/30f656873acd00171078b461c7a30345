@@ -1,0 +1,15 @@
+package Exercice2;
+
+public class VolMigrateur extends StrategieVol {
+
+	public VolMigrateur() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	double distance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

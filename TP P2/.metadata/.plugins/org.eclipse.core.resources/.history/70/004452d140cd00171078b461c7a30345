@@ -1,0 +1,14 @@
+package Exercice2;
+
+import java.util.Observable;
+
+public class Article extends Observable {
+	private String nomArt;
+	private int prix;
+	public Article(String nomArt, int prix) {
+		super();
+		this.nomArt = nomArt;
+		this.prix = prix;
+	}
+	
+}

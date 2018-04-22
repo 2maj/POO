@@ -1,0 +1,24 @@
+package Exercice2;
+
+import java.util.Observable;
+
+public class Verificateur extends Personne {
+
+	public Verificateur(String nom, int seuil) {
+		super(nom, seuil);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Observable o, Object arg) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

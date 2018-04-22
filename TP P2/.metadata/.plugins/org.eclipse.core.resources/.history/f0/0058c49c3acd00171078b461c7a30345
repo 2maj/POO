@@ -1,0 +1,15 @@
+package Exercice2;
+
+public class VolSaut extends StrategieVol {
+
+	public VolSaut() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	double distance() {
+		// TODO Auto-generated method stub
+		return 0.5;
+	}
+
+}

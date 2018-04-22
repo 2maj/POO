@@ -1,0 +1,31 @@
+
+public class Machine {
+	Gere gere;
+	Bli bli;
+	private Etat etatCourant;
+	public Machine() {
+		bli=new Bli(this);
+		gere=new Gere(this);
+		etatCourant=bli;
+	}
+	public Gere getGere() {
+		return gere;
+	}
+	public Bli getBli() {
+		return bli;
+	}
+	public Etat getEtarCourant() {
+		return etatCourant;
+	}
+	public void setEtarCourant(Etat etarCourant) {
+		this.etatCourant = etarCourant;
+	}
+	public void truc() {
+		etatCourant.truc();
+	}
+	public void machin() {
+		etatCourant.machin();
+	}
+	
+	
+}

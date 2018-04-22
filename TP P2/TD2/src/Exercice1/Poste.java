@@ -1,0 +1,22 @@
+package Exercice1;
+
+import java.util.Observable;
+
+public class Poste extends Observable {
+	private String nom;
+	private double temp;
+	public Poste(String n) {
+		this.nom=n;
+		this.temp=0;
+	}
+	public double getTemp() {
+		// TODO Auto-generated method stub
+		return this.temp;
+	}
+	public void addTemp(double t) {
+		this.temp=t;
+		this.setChanged();
+		this.notifyObservers(t);
+	}
+
+}

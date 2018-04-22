@@ -1,0 +1,63 @@
+
+import javafx.geometry.Insets;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+import tp2.Temperature;
+
+public class Fenetre extends Stage{
+	private TextField temp;
+	private Avertisseur field;
+	private Averti display;
+	
+	public Fenetre(){
+		this.setTitle("Température");
+		this.setResizable(true);
+		this.setScene(new Scene(creerContenu()));
+	}
+	
+	private Parent creerContenu() {
+		field=new Avertisseur();
+		display=new Averti();
+		field.addObserver(display);
+		BorderPane racine= new BorderPane();
+		Label label = new Label(toString(display.getValeur()));
+		temp = new TextField();
+		racine.setTop(label);
+		racine.setCenter(temp);
+		racine.setPadding(new Insets(50));
+		
+		temp.setOnAction(e->{
+			if(!this.temp.getText().isEmpty()){
+				display.setValeur(Integer.parseInt(temp.getText()));
+				field.setValue(Integer.parseInt(temp.getText()));
+				label.setText(toString(field.getValue()));
+			}
+		});
+		return racine;
+	}
+	/*
+	public static synchronized int getValeur(){
+		if(valeur==null){
+			valeur=new Integer(0);
+		}
+		return valeur.intValue();
+	}
+	
+	public static synchronized void incremente(){
+		int a;
+		a = Fenetre.getValeur();
+		a++;
+		valeur=new Integer(a);
+	}
+	*/
+
+	public String toString(int val){
+		String str=String.valueOf(val);
+		return str;
+		
+	}
+}

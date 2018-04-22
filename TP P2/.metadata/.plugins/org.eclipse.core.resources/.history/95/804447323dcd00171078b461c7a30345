@@ -1,0 +1,15 @@
+package Exercice1;
+
+public abstract class Commande {
+	private Client cli;
+	private int montantHT;
+	private SstrategieTaxe calculTaxe;
+	public Commande(Client cli, int m, StrategieTaxe st) {
+		cli=cli;
+		montantHT=m;
+		CalculTaxe=s;
+	}
+	double taxe(){
+		return calculTaxe.taxe(montantHT);
+	}
+}

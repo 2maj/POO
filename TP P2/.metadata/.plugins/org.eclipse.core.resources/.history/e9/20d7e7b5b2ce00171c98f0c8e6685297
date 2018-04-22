@@ -1,0 +1,10 @@
+
+public abstract class Etat {
+	private Machine mac;
+	
+	public Etat(Machine mac) {
+		this.mac = mac;
+	}
+	abstract void machin();
+	abstract void truc();
+}

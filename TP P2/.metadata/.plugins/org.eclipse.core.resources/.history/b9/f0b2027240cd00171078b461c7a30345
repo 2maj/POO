@@ -1,0 +1,36 @@
+package Exercice2;
+
+import java.util.Observable;
+import java.util.Observer;
+
+public class Personne implements Observer {
+	private String nom;
+	private int seuil;
+	public Personne(String nom, int seuil) {
+		super();
+		this.nom = nom;
+		this.seuil = seuil;
+	}
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public int getSeuil() {
+		return seuil;
+	}
+	public void setSeuil(int seuil) {
+		this.seuil = seuil;
+	}
+	/*
+	 * 
+	 * 
+	 * 
+	 */
+	@Override
+	public void update(Observable o) {
+		Article art= (Article)
+		
+	}
+}

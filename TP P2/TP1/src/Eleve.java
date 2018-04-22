@@ -1,0 +1,9 @@
+
+public class Eleve extends Personne{
+
+	public Eleve(String n) {
+		super(n);
+		// TODO Auto-generated constructor stub
+	}
+
+}

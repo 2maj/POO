@@ -1,0 +1,8 @@
+package Exercice1;
+
+public class StrategieAfrique {
+	private StrategieTaxeUSA stUSA;
+	double taxe(int m) {
+		return stUSA.taxe(m)*0.8;
+	}
+}

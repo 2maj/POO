@@ -1,0 +1,17 @@
+public abstract class Met {
+	private String nom;
+	private int calorie;
+	public Met(String n, int c){
+		nom=n;
+		calorie=c;
+	}
+	abstract boolean estSucre();
+	abstract boolean estSale();
+	abstract boolean estSucreSale();
+	public boolean estDietetique() {
+		return (calorie<200);
+	}
+	public int getCalorie() {
+		return calorie;
+	}
+}

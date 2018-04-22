@@ -1,0 +1,7 @@
+
+public class Machine {
+	final Gere gere;
+	final Bli bli;
+	private Etat etarCourant;
+	
+}

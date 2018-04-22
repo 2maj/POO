@@ -1,0 +1,20 @@
+package ClasseFille;
+public class Veau extends Met{
+
+	public Veau(int c) {
+		super("Veau", c);
+	}
+
+	@Override
+	boolean estSucre() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	boolean estSale() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+}

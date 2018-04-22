@@ -1,0 +1,10 @@
+package Exercice1;
+
+public class CommandeAfrique extends Commande {
+
+	public CommandeAfrique(Client cli, int m, StrategieTaxe st) {
+		super(cli, m, st);
+		// TODO Auto-generated constructor stub
+	}
+
+}

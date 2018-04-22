@@ -1,0 +1,9 @@
+package ClasseFille;
+
+public class Sucre {
+
+	public Sucre() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

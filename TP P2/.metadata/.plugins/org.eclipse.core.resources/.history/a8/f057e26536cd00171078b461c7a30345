@@ -1,0 +1,9 @@
+package ClasseFille;
+import package 
+public class Veau extends Met{
+
+	public Veau(int c) {
+		super("Veau", c);
+	}
+
+}
